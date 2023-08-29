@@ -7,7 +7,7 @@ roboshop-us-dev-db-mongodb-01.nowheretobefound.online
 [mongodb:vars]
 MONGODB_USERNAME=mongoadmin
 MONGO_DB=category
-Name=anand-inventory
+NAME=anand-inventory
 
 [cart]
 roboshop-in-dev-app-cart-01.nowheretobefound.online
