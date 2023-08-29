@@ -1,0 +1,13 @@
+- name: ping the node
+  hosts: mongodb
+  # this is list of tasks/modules/collections
+  tasks:
+  - name: installing nginx
+  # this is the map
+    ansible.builtin.yum:
+      name: nginx
+      state: installed
+  - name: start nginx
+    ansible.builtin.service:
+      name: nginx
+      state: started
