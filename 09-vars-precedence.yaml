@@ -1,0 +1,16 @@
+- name: testing variable precedence
+  hosts: mongodb
+  vars:
+    Name: anand - play
+  vars_file:
+   variables.yaml
+  vars_prompt:
+    - name: Name
+      prompt: enter your name
+      private: false
+  tasks:
+  - name: variable at task level
+    vars:
+      Name: anand - task
+    ansible.builtin.debug:
+      msg: "Name from command line: {{Name}}"
