@@ -1,14 +1,14 @@
 - name: print data types
   hosts: localhost
   vars:
-    Name: "Anand" #string
-    Age: 26 #number
-    IsDevops: true # boolean
-    - skills: # list
-      - Devops
-      - AWS
-      - Docker
-    - Experience:  #maps
+  - Name: "Anand" #string
+  - Age: 26 #number
+  - IsDevops: true # boolean
+  - skills: # list
+    - Devops
+    - AWS
+    - Docker
+  - Experience:  #maps
       Devops: 7
       AWS: 5
       Docker: 4
