@@ -1,7 +1,7 @@
 - name: variables in ansible
   hosts: mongodb
   vars:
-    name: anand
+    Name: anand
     age: 26
     city: Hyderabad
   tasks:
@@ -10,4 +10,4 @@
         msg: "Hello I'm learning ansible"
     - name: printing from play level variables
       ansible.builtin.debug:
-        msg: "Hello, I'm {{name}}({{age}}) from {{city}}"
+        msg: "Hello, I'm {{Name}}({{age}}) from {{city}}"
