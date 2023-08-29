@@ -1,8 +1,8 @@
 - name: create user
   hosts: localhost
   tasks:
-  -name: check roboshop user exists or not
-    ansible.builtin.command:
+  - name: check roboshop user exists or not
+    ansible.builtin.command: id roboshop 
     register: output
     ignore_errors: true
   - name: print the command output
