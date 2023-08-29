@@ -10,7 +10,9 @@
     private: false
   tasks:
   - name: variable at task level
-    vars:
-      NAME: anand - task
     ansible.builtin.debug:
       msg: "Name from command line: {{NAME}}"
+
+# command line
+# task
+# 
