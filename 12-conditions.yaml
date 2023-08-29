@@ -1,0 +1,9 @@
+- name: variables in ansible
+  hosts: mongodb
+  vars:
+    Name: anand
+  tasks:
+  - name: run this if Name=anand
+    ansible.builtin.debug:
+      msg: "Hello, {{Name}}"
+    when: Name == "anand"
