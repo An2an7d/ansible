@@ -22,9 +22,3 @@ roboshop-in-dev-app-user-02.nowheretobefound.online
 [app:children]
 cart
 user
-
-ansible -i inventory mongodb --list-hosts
-ansible -i inventory db --list-hosts
-ansible -i inventory app --list-hosts
-ansible -i inventory ungrouped --list-hosts
-ansible -i inventory all --list-hosts
