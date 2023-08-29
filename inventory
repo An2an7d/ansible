@@ -4,6 +4,10 @@
 [mongodb]
 roboshop-us-dev-db-mongodb-01.nowheretobefound.online
 
+[mongodb:vars]
+MONGODB_USERNAME=mongoadmin
+MONGO_DB=category
+
 [cart]
 roboshop-in-dev-app-cart-01.nowheretobefound.online
 roboshop-in-dev-app-cart-02.nowheretobefound.online
