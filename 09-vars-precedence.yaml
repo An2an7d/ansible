@@ -2,8 +2,6 @@
   hosts: mongodb
   vars:
     NAME: anand - play
-  vars_files:
-  - variables.yaml
   vars_prompt:
   - name: NAME
     prompt: enter your name
@@ -15,4 +13,5 @@
 
 # command line
 # task
+# file
 # 
