@@ -2,10 +2,6 @@
   hosts: mongodb
   vars:
     NAME: anand - play
-  vars_prompt:
-  - name: NAME
-    prompt: enter your name
-    private: false
   tasks:
   - name: variable at task level
     ansible.builtin.debug:
@@ -14,4 +10,4 @@
 # command line
 # task
 # file
-# 
+# prompt
