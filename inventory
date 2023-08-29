@@ -1,0 +1,30 @@
+172.1.2.3
+173.3.2.1
+
+[mongodb]
+roboshop-us-dev-db-mongodb-01.nowheretobefound.online
+
+[cart]
+roboshop-in-dev-app-cart-01.nowheretobefound.online
+roboshop-in-dev-app-cart-02.nowheretobefound.online
+
+[sql]
+roboshop-us-dev-db-mysql-01.nowheretobefound.online
+
+[db:children]
+mongodb
+sql
+
+[user]
+roboshop-in-dev-app-user-01.nowheretobefound.online
+roboshop-in-dev-app-user-02.nowheretobefound.online
+
+[app:children]
+cart
+user
+
+ansible -i inventory mongodb --list-hosts
+ansible -i inventory db --list-hosts
+ansible -i inventory app --list-hosts
+ansible -i inventory ungrouped --list-hosts
+ansible -i inventory all --list-hosts
